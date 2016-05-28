@@ -82,6 +82,8 @@
     
     // 让取消按钮提前显示出来
     [_searchController.searchBar setShowsCancelButton:YES animated:NO];
+   
+    // 修改默认取消按钮
     [_searchController.searchBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
         
         [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

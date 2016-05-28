@@ -43,7 +43,7 @@
 
 ```
 
- * 让取消按钮提前显示出来（建议写在代理方法中)
+ * 让取消按钮提前显示出来，并修改默认取消按钮（建议写在代理方法中)
  
  ```   
 [_searchController.searchBar setShowsCancelButton:YES animated:NO];
