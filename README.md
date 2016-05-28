@@ -8,7 +8,7 @@
 ---
 > 一、 首先，本Demo分为两个小模块，为了更加方便展示，写在了一个控制器中。
 
-1、本页面的数据模块
+**1、本页面的数据模块**
 
 ```
 数据源
@@ -19,7 +19,7 @@
 ```
 ---
 	
-2、搜索页面模块
+**2、搜索页面模块**
 
 ```
 搜索结果的数组
@@ -36,14 +36,14 @@
 
 >二、需要遵循`UISearchResultsUpdating`协议,方法实现如下
 
-* 在点击搜索时会调用一次，点击取消按钮又调用一次
+**1、在点击搜索时会调用一次，点击取消按钮又调用一次**
 
 ```
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController;
 
 ```
 
- * 让取消按钮提前显示出来，并修改默认取消按钮（建议写在代理方法中)
+**2、让取消按钮提前显示出来，并修改默认取消按钮**（建议写在代理方法中)
  
  ```   
 [_searchController.searchBar setShowsCancelButton:YES animated:NO];
@@ -63,7 +63,7 @@
         
     }];
 ```
-* 判断当前搜索是否在搜索状态还是取消状态
+**3、判断当前搜索是否在搜索状态还是取消状态**
 
 ```
     if (searchController.isActive) {
